@@ -1,1 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --background-color: #ecf0f1;
+  --text-color: #2c3e50;
+  --muted-color: #eee;
+  --main-color: #3b82f6;
+  --hover-color: #2d5eac;
+  --second-color: #cadcee;
+  --black-color: #000;
+  --button-color: #5b5b5b;
+  --paragraph-color: #919191;
+}
 
+:root html,
+:root body,
+:root ul,
+:root h1,
+:root h2,
+:root h3,
+:root h4,
+:root h5,
+:root ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  overflow-y: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #f8fafc;
+}

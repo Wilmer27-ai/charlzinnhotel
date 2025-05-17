@@ -1,1 +1,97 @@
 @use "scss_partials/general" as *;
+
+.nav {
+  background: black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-family: $font;
+
+      li {
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: 500;
+          transition: color 0.2s;
+
+          &:hover {
+            color: #0077ff;
+          }
+        }
+      }
+    }
+
+    .nav-logo {
+      .logo-text {
+        font-family: $font;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+
+        .logo-text-dot {
+          color: #0077ff;
+        }
+      }
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem; // Adjust this value for spacing between social and button
+    }
+
+    .nav-social {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        .social-icon {
+          width: 24px;
+          height: 24px;
+          display: block;
+          transition: filter 0.2s;
+
+          &:hover {
+            filter: brightness(0.8) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+          }
+        }
+      }
+    }
+
+    .nav-btn {
+      .btn {
+        background: #0077ff;
+        color: #fff;
+        padding: 0.5rem 1.5rem;
+        text-decoration: none;
+        transition: background 0.2s;
+        font-family: $font;
+
+        &:hover {
+          background: #005fcc;
+        }
+      }
+    }
+  }
+}

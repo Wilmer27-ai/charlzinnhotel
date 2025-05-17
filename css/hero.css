@@ -40,3 +40,89 @@ html {
   scroll-behavior: smooth;
   background-color: #f8fafc;
 }
+
+#hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+#hero .wrapper,
+#hero .inner,
+#hero .content {
+  height: 100%;
+  width: 100%;
+}
+#hero .hero-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#hero .hero-slides .hero-slide {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero .hero-slides .hero-slide img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+#hero .hero-slides .hero-slide .hero-slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  z-index: 3;
+  font-family: "Poppins", sans-serif;
+}
+#hero .hero-slides .hero-slide .hero-slide-text h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+#hero .hero-slides .hero-slide .hero-slide-text p {
+  font-size: 1.25rem;
+  margin: 0;
+}
+#hero .hero-arrow-left,
+#hero .hero-arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  z-index: 2;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+#hero .hero-arrow-left:hover,
+#hero .hero-arrow-right:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+#hero .hero-arrow-left {
+  left: 20px;
+}
+#hero .hero-arrow-right {
+  right: 20px;
+}

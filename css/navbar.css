@@ -40,3 +40,80 @@ html {
   scroll-behavior: smooth;
   background-color: #f8fafc;
 }
+
+.nav {
+  background: black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+.nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.nav .container .nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.nav .container .nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav .container .nav-links li a:hover {
+  color: #0077ff;
+}
+.nav .container .nav-logo .logo-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+.nav .container .nav-logo .logo-text .logo-text-dot {
+  color: #0077ff;
+}
+.nav .container .nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav .container .nav-social {
+  display: flex;
+  gap: 1rem;
+}
+.nav .container .nav-social a {
+  display: flex;
+  align-items: center;
+}
+.nav .container .nav-social a .social-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  transition: filter 0.2s;
+}
+.nav .container .nav-social a .social-icon:hover {
+  filter: brightness(0.8) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+}
+.nav .container .nav-btn .btn {
+  background: #0077ff;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  transition: background 0.2s;
+  font-family: "Poppins", sans-serif;
+}
+.nav .container .nav-btn .btn:hover {
+  background: #005fcc;
+}

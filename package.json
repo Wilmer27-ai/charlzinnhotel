@@ -1,0 +1,10 @@
+{
+  "name": "charlzinn",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass --no-source-map --watch scss:css"
+  },
+  "devDependencies": {
+    "sass": "^1.x.x"
+  }
+}

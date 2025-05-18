@@ -1,0 +1,247 @@
+@use "scss_partials/general" as *;
+
+#facilities {
+  padding: 60px 0;
+  background: #fafbfc;
+
+  .wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .inner {
+      width: 100%;
+
+      .content {
+        width: 100%;
+        margin: 0 auto;
+
+        .header-title {
+         font-size: 3rem;
+          font-weight: 600;
+          text-align: center;
+          margin-top: 2rem;
+          font-family: $font;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+           h2 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-weight: 200;
+            color: #0077ff;
+            padding-top: 20px;
+            text-align: center;
+          }
+          h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 100;
+            max-width: 400px;
+            text-align: center;
+          }
+        }
+
+        .facilities {
+          margin: 0 auto;
+          max-width: 1200px;
+          padding: 2rem 1rem 1rem 1rem;
+          background: #fff;
+          box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+
+          .facilities-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem 2rem;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+            font-family: $font;
+
+            span {
+              font-size: 1rem;
+              color: #17643b;
+              display: flex;
+              align-items: center;
+              justify-content: center; // Center content horizontally
+              gap: 0.5rem;
+              font-weight: 500;
+              background: #f5f7fa;
+              padding: 0.45rem 1.1rem;
+              border-radius: 1rem;
+              box-shadow: 0 2px 8px rgba(34, 139, 34, 0.06);
+              transition: background 0.2s, color 0.2s;
+              min-width: 120px; // Ensures equal width for all icons
+              text-align: center; // Center text inside span
+
+              &:hover {
+                background: #e3eef7;
+                color: #0d3a1a;
+              }
+            }
+          }
+
+          .facilities-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            justify-content: center;
+            align-items: flex-start;
+
+            .facilities-col {
+              flex: 1 1 260px;
+              min-width: 220px;
+              max-width: 340px;
+              background: none;
+              padding: 0 0.5rem;
+              font-family: $font;
+
+              h3, h4 {
+                margin: 1.2rem 0 0.5rem 0;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: #009DFF;
+                font-family: $font;
+              }
+
+              h4 {
+                font-size: 1rem;
+                font-weight: 600;
+                color: #444;
+              }
+
+              ul {
+                margin: 0 0 1rem 0;
+                padding-left: 1.2rem;
+                list-style: disc;
+                color: #222;
+
+                li {
+                  margin-bottom: 0.3rem;
+                  font-size: 1rem;
+                  font-family: $font;
+                  font-weight: 400;
+                }
+              }
+
+              p {
+                font-size: 0.98rem;
+                color: #444;
+                margin-bottom: 1rem;
+              }
+
+              .add-charge {
+                background: #eee;
+                color: #444;
+                font-size: 0.9em;
+                padding: 0.1em 0.5em;
+                border-radius: 0.4em;
+                margin-left: 0.4em;
+              }
+            }
+          }
+        }
+      }
+    .reservation {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 2.5rem auto 0 auto;
+      max-width: 800px;
+      padding: 2rem 1.5rem;
+      border: 1px solid #0077ff;
+      background: #fafdff;
+      box-shadow: 0 2px 12px rgba(0,123,255,0.07);
+      text-align: center;
+      font-family: $font;
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: #0077ff;
+        margin-bottom: 0;
+        text-align: center;
+        font-family: $font;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+
+      a {
+        font-size: 1.1rem;
+        color: #17643b;
+        font-weight: 700;
+        text-decoration: none;
+        background: #e3eef7;
+        padding: 0.6rem 1.2rem;
+        transition: background 0.2s, color 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        &:hover {
+          background: #0077ff;
+          color: #fff;
+        }
+      }
+    }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 900px) {
+  #facilities {
+    .wrapper {
+      .inner {
+        .content {
+          .facilities {
+            .facilities-columns {
+              flex-direction: column;
+              gap: 1.5rem;
+              .facilities-col {
+                max-width: 100%;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #facilities {
+    padding: 30px 0;
+
+    .wrapper {
+      .inner {
+        .content {
+          .header-title {
+            h1 {
+              font-size: 1.5rem;
+            }
+          }
+          .facilities {
+            padding: 1rem 0.2rem;
+            .facilities-icons {
+              gap: 0.7rem 1rem;
+              span {
+                font-size: 0.95rem;
+                padding: 0.3rem 0.7rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

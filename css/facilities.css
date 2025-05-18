@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --background-color: #ecf0f1;
+  --text-color: #2c3e50;
+  --muted-color: #eee;
+  --main-color: #3b82f6;
+  --hover-color: #2d5eac;
+  --second-color: #cadcee;
+  --black-color: #000;
+  --button-color: #5b5b5b;
+  --paragraph-color: #919191;
+}
+
+:root html,
+:root body,
+:root ul,
+:root h1,
+:root h2,
+:root h3,
+:root h4,
+:root h5,
+:root ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  overflow-y: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #f8fafc;
+}
+
+#facilities {
+  padding: 60px 0;
+  background: #fafbfc;
+}
+#facilities .wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#facilities .wrapper .inner {
+  width: 100%;
+}
+#facilities .wrapper .inner .content {
+  width: 100%;
+  margin: 0 auto;
+}
+#facilities .wrapper .inner .content .header-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#facilities .wrapper .inner .content .header-title h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 200;
+  color: #0077ff;
+  padding-top: 20px;
+  text-align: center;
+}
+#facilities .wrapper .inner .content .header-title h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 100;
+  max-width: 400px;
+  text-align: center;
+}
+#facilities .wrapper .inner .content .facilities {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem 1rem 1rem 1rem;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+#facilities .wrapper .inner .content .facilities .facilities-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+#facilities .wrapper .inner .content .facilities .facilities-icons span {
+  font-size: 1rem;
+  color: #17643b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  background: #f5f7fa;
+  padding: 0.45rem 1.1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(34, 139, 34, 0.06);
+  transition: background 0.2s, color 0.2s;
+  min-width: 120px;
+  text-align: center;
+}
+#facilities .wrapper .inner .content .facilities .facilities-icons span:hover {
+  background: #e3eef7;
+  color: #0d3a1a;
+}
+#facilities .wrapper .inner .content .facilities .facilities-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+#facilities .wrapper .inner .content .facilities .facilities-columns .facilities-col {
+  flex: 1 1 260px;
+  min-width: 220px;
+  max-width: 340px;
+  background: none;
+  padding: 0 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+#facilities .wrapper .inner .content .facilities .facilities-columns .facilities-col h3, #facilities .wrapper .inner .content .facilities .facilities-columns .facilities-col h4 {
+  margin: 1.2rem 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #009DFF;
+  font-family: "Poppins", sans-serif;
+}
+#facilities .wrapper .inner .content .facilities .facilities-columns .facilities-col h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+}
+#facilities .wrapper .inner .content .facilities .facilities-columns .facilities-col ul {
+  margin: 0 0 1rem 0;
+  padding-left: 1.2rem;
+  list-style: disc;
+  color: #222;
+}
+#facilities .wrapper .inner .content .facilities .facilities-columns .facilities-col ul li {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+#facilities .wrapper .inner .content .facilities .facilities-columns .facilities-col p {
+  font-size: 0.98rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+#facilities .wrapper .inner .content .facilities .facilities-columns .facilities-col .add-charge {
+  background: #eee;
+  color: #444;
+  font-size: 0.9em;
+  padding: 0.1em 0.5em;
+  border-radius: 0.4em;
+  margin-left: 0.4em;
+}
+#facilities .wrapper .inner .reservation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2.5rem auto 0 auto;
+  max-width: 800px;
+  padding: 2rem 1.5rem;
+  border: 1px solid #0077ff;
+  background: #fafdff;
+  box-shadow: 0 2px 12px rgba(0, 123, 255, 0.07);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+#facilities .wrapper .inner .reservation h2 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #0077ff;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#facilities .wrapper .inner .reservation a {
+  font-size: 1.1rem;
+  color: #17643b;
+  font-weight: 700;
+  text-decoration: none;
+  background: #e3eef7;
+  padding: 0.6rem 1.2rem;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#facilities .wrapper .inner .reservation a:hover {
+  background: #0077ff;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  #facilities .wrapper .inner .content .facilities .facilities-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  #facilities .wrapper .inner .content .facilities .facilities-columns .facilities-col {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 600px) {
+  #facilities {
+    padding: 30px 0;
+  }
+  #facilities .wrapper .inner .content .header-title h1 {
+    font-size: 1.5rem;
+  }
+  #facilities .wrapper .inner .content .facilities {
+    padding: 1rem 0.2rem;
+  }
+  #facilities .wrapper .inner .content .facilities .facilities-icons {
+    gap: 0.7rem 1rem;
+  }
+  #facilities .wrapper .inner .content .facilities .facilities-icons span {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.7rem;
+  }
+}

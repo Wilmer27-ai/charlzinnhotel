@@ -1,0 +1,112 @@
+@use "scss_partials/general" as *;
+
+#rooms {
+  .wrapper {
+    .inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      .content {
+        margin: 40px 10px 200px 10px;
+        .header-title {
+          font-size: 3rem;
+          font-weight: 600;
+          text-align: center;
+          margin-top: 2rem;
+          font-family: $font;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          h2 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-weight: 200;
+            color: #0077ff;
+            padding-top: 20px;
+            text-align: center;
+          }
+          h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 100;
+            max-width: 400px;
+            text-align: center;
+          }
+        }
+        .rooms-cards {
+          display: flex;
+          gap: 2rem;
+          justify-content: center;
+          margin-top: 2rem;
+          flex-wrap: wrap;
+
+          .room-card {
+
+            padding: 1rem 1.2rem 1.2rem 1.2rem;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08),
+              0 1.5px 4px rgba(0, 0, 0, 0.06);
+            transition: box-shadow 0.2s;
+            font-family: $font;
+
+            &:hover {
+              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12),
+                0 3px 8px rgba(0, 0, 0, 0.09);
+            }
+
+            .room-image {
+              width: 100%;
+              height: 280px;
+              object-fit: cover;
+              margin-bottom: 1rem;
+            }
+
+            .room-title {
+              font-size: 1.5rem;
+              font-weight: 200;
+              margin-bottom: 1rem;
+              text-align: center;
+              font-family: $font;
+            }
+
+            .room-features {
+              list-style: disc inside;
+              margin-bottom: 1.5rem;
+              color: #444;
+              font-size: 1rem;
+              padding-left: 0;
+              text-align: left;
+              width: 100%;
+
+              li {
+                margin-bottom: 0.5rem;
+              }
+            }
+
+            .book-btn {
+              background: transparent;
+              color: #0077ff;
+              border: 1px solid #0077ff;
+              padding: 0.5rem 7rem;
+              text-decoration: none;
+              font-family: $font;
+              font-weight: 500;
+              transition: background 0.2s, color 0.2s, border-color 0.2s;
+
+              &:hover {
+                background: #0077ff;
+                color: #fff;
+                border-color: #005fcc;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
